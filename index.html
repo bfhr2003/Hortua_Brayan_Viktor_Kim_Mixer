@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <title>Music Mixer</title>
+</head>
+<body>
+    <header id="headLine" class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
+      <a href="index.html" class="header_logo">
+        <img src="images/logo.png" alt="Logo">
+      </a> 
+      <div class="header__social">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+            <path d="M16.5 7.5l0 .01" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" />
+        </svg>
+      </div>
+    </header>
+
+    <!-- Delete Zone -->
+    <div id="delete-zone" class="delete-zone">
+      <svg id="Flat" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <style>
+          </style>
+        </defs>
+        <title/><g data-name="20. Napkin is flying in a bucket" id="_20._Napkin_is_flying_in_a_bucket"><path class="cls-1" d="M388.77,96.92a8,8,0,0,1-5.09-10.11l7.15-21.63A13.85,13.85,0,0,0,382,47.66L340.48,33.94A13.88,13.88,0,0,0,323,42.76l-7.14,21.63a8,8,0,0,1-15.2-5l7.14-21.63a29.92,29.92,0,0,1,37.74-19L387,32.46A29.86,29.86,0,0,1,406,70.2l-7.15,21.63A8,8,0,0,1,388.77,96.92Z"/><path class="cls-2" d="M431.86,245.61a8,8,0,0,1,7.91,9.19c-8.43,56-2.18,14.46-31.34,208.38A29.15,29.15,0,0,1,379.6,488h-132a29.15,29.15,0,0,1-28.83-24.82c-29.16-193.92-22.91-152.41-31.34-208.38a8,8,0,0,1,7.91-9.19Z"/><path class="cls-3" d="M443.19,106.48a29.15,29.15,0,0,1,18.54,36.83l-6.06,18.36a8,8,0,0,1-10.11,5.09l-227.07-75a8,8,0,0,1-5.09-10.11l6.07-18.36A29.16,29.16,0,0,1,256.3,44.72C378,84.94,334,70.38,443.19,106.48Z"/><path class="cls-4" d="M137.43,118.3,147,140a8.8,8.8,0,0,1-.83,8.59L138,160.37a8.82,8.82,0,0,1-9,3.61c-15.63-3.14-16.05-3.56-18.88-2.65l-19.31,6.2A8.76,8.76,0,0,1,84,166.9l-15.33-8.25A8.8,8.8,0,0,1,64,150.9V139.68a8.82,8.82,0,0,0-6.57-8.52l-3.86-1A8.82,8.82,0,0,1,47,121.63V108.87a8.81,8.81,0,0,1,8.17-8.79L75.51,98.6a8.81,8.81,0,0,0,8.17-8.79A8.81,8.81,0,0,1,92.49,81h17.62a8.8,8.8,0,0,1,8.79,9.34l-.76,12.52a8.83,8.83,0,0,0,7.07,9.18l5.88,1.17A8.82,8.82,0,0,1,137.43,118.3Z"/><path class="cls-5" d="M444.49,106.94c9.15,3.51,4,17.34-5.28,14.27L274.3,66.72a29.16,29.16,0,0,0-36.83,18.54l-1.41,4.26a7.61,7.61,0,0,1-9.62,4.84l-7.95-2.63a8,8,0,0,1-5.09-10.11l6.07-18.36A29.16,29.16,0,0,1,256.3,44.72C451.65,109.28,443.15,106.43,444.49,106.94Z"/><path class="cls-6" d="M431.86,245.61a8,8,0,0,1,7.91,9.19l-4.64,30.81H235.29a8,8,0,0,0-7.91,9.19c2.42,16.05,15,99.49,24.61,163.6,3.21,21.38-28.78,27.39-33,6.19-.32-1.57,1.11,7.47-31.59-209.79a8,8,0,0,1,7.91-9.19Z"/><path class="cls-3" d="M431.86,245.61a8,8,0,0,1,7.91,9.19l-6.51,43.25H193.89l-6.51-43.25a8,8,0,0,1,7.91-9.19Z"/><path class="cls-5" d="M402.29,245.65c25.77,1.14,24.46,40-1.34,40H235.29a8,8,0,0,0-7.91,9.19l.49,3.25h-34l-6.51-43.25a8,8,0,0,1,7.91-9.19C196.61,245.61,401.06,245.59,402.29,245.65Z"/><path class="cls-7" d="M118.9,90.34l-.52,8.43c-.33,5.41-4.7,5-4.7,11a8.81,8.81,0,0,1-8.17,8.79l-20.34,1.48A8.81,8.81,0,0,0,77,128.87v12.76a8.82,8.82,0,0,0,6.57,8.52l3.86,1A8.82,8.82,0,0,1,94,159.68a7.58,7.58,0,0,1-10.9,6.81c-2.87-1.4-7.1-3.87-14.47-7.84A8.8,8.8,0,0,1,64,150.9V139.68a8.82,8.82,0,0,0-6.57-8.52l-3.86-1A8.82,8.82,0,0,1,47,121.63V108.87a8.81,8.81,0,0,1,8.17-8.79L75.51,98.6a8.81,8.81,0,0,0,8.17-8.79A8.8,8.8,0,0,1,92.49,81h17.62A8.8,8.8,0,0,1,118.9,90.34Z"/></g></svg>
+    </div>
+
+    <main class="player col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
+      <h1 class="hidden">Welcome to our Music Mixer !</h1>
+      <div class="banner__content">
+        <!-- drop zone -->
+        <div class="sound-board">
+          <div class="drop-zone drop-zone-loop"></div>
+          <div class="drop-zone drop-zone-loop"></div>
+          <div class="drop-zone drop-zone-loop"></div>
+          <div class="drop-zone drop-zone-loop"></div>
+            <!-- buttons -->
+          <div class="button-controls">
+            <div class="audio-container">
+              <audio id="audio-player"></audio>
+            </div>
+            <button id="play-btn" type="button" disabled>
+              <img src="./images/play_btn.svg" alt="play button">
+            </button>
+            <button id="stop-btn" type="button">
+              <img src="./images/stop_btn.svg" alt="stop">    
+            </button>
+            <button id="resetBtn">Reset</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <!-- Sounds and instrument img -->
+    <section id="music-container" class="music col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12">
+      <h2 class="hidden">Choose the sounds</h2>
+      <div class="musical-tools">
+        <!-- these are the draggable pieces -->
+        <div class="drop-zone">
+          <audio src="audio/beat_1.wav" loop></audio>
+          <div class="draggable-music-piece" draggable="true">
+            <img class="tool-image" src="images/electric-guitar.png" alt="electric-guitar">
+          </div>
+        </div>
+
+        <div class="drop-zone">
+          <audio src="audio/beat_2.wav" loop></audio>
+          <div class="draggable-music-piece" draggable="true">
+            <img class="tool-image" src="images/drum.png" alt="drums">
+          </div>
+        </div>
+
+        <div class="drop-zone">
+          <audio src="audio/beat_3.wav" loop></audio>
+          <div class="draggable-music-piece" draggable="true">
+            <img class="tool-image" src="images/keyboard.png" alt="keyboard">
+          </div>
+        </div>
+
+        <div class="drop-zone">
+          <audio src="audio/beat_4.wav" loop></audio>
+          <div class="draggable-music-piece" draggable="true">
+            <img class="tool-image" src="images/trumpet.png" alt="trumpet">
+          </div>
+        </div>
+
+        <div class="drop-zone">
+          <audio src="audio/beat_5.wav" loop></audio>
+          <div class="draggable-music-piece" draggable="true">
+            <img class="tool-image" src="images/cymbals.png" alt="cymbals">
+          </div>
+        </div>
+        
+        <div class="drop-zone">
+          <audio src="audio/beat_6.wav" loop></audio>
+          <div class="draggable-music-piece" draggable="true">
+            <img class="tool-image" src="images/music.png" alt="violin">
+          </div>
+        </div>
+
+        <div class="drop-zone">
+          <audio src="audio/beat_7.wav" loop></audio>
+          <div class="draggable-music-piece" draggable="true">
+            <img class="tool-image" src="images/electric-guitar_2.png" alt="electric guitar 2">
+          </div>
+        </div>
+        
+        <div class="drop-zone">
+          <audio src="audio/beat_8.wav" loop></audio>
+          <div class="draggable-music-piece" draggable="true">
+            <img class="tool-image" src="images/electric-guitar_3.png" alt="electric guitar 3">
+          </div>
+        </div>
+
+        <div class="drop-zone">
+          <audio src="audio/beat_9.wav" loop></audio>
+          <div class="draggable-music-piece" draggable="true">
+            <img class="tool-image" src="images/boombox.png" alt="boombox">
+          </div>
+        </div>
+        
+        <div class="drop-zone">
+          <audio src="audio/beat_10.wav" loop></audio>
+          <div class="draggable-music-piece" draggable="true">
+            <img class="tool-image" src="images/equalizer.png" alt="equalizer">
+          </div>
+        </div>
+
+      </div>  
+    </section>
+    
+  <script src="js/main.js"></script>
+</body>
+</html>
